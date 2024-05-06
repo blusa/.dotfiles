@@ -7,6 +7,7 @@ $packages = @(
     "Logitech.GHUB",
     "Logitech.OptionsPlus",
     "Microsoft.WindowsTerminal",
+    "MiniTool.PartitionWizard.Free",
     "RaspberryPiFoundation.RaspberryPiImager",
     "TortoiseSVN.TortoiseSVN",
     "WhatsApp.WhatsApp",
