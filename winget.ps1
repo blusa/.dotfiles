@@ -35,9 +35,18 @@ $packages = @(
 # Remove duplicates and sort the packages alphabetically
 $packages = $packages | Sort-Object -Unique
 
+# Get the manufacturer of the device
+$manufacturer = (Get-WmiObject -Class Win32_ComputerSystem).Manufacturer
+
 # Loop through each package and install it
 foreach ($package in $packages) {
-    winget install -e --id $package
+    # Check if the package is a Lenovo package and the manufacturer is Lenovo
+    if ($package -like "*Lenovo.*" -and $manufacturer -like "*Lenovo*") {
+        winget install -e --id $package
+    }
+    elseif ($package -notlike "*Lenovo.*") {
+        winget install -e --id $package
+    }
 }
 
 # Upgrade all installed packages
