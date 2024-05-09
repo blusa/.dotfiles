@@ -20,11 +20,13 @@ $packages = @(
     "Meld.Meld",
     "Microsoft.VisualStudioCode",
     "Microsoft.WindowsTerminal",
+    "Mozilla.Firefox"
     "MullvadVPN.MullvadVPN",
     "Notepad++.Notepad++",
     "Prusa3D.PrusaSlicer",
     "RaspberryPiFoundation.RaspberryPiImager",
     "Termius.Termius",
+    "tailscale.tailscale"
     "TortoiseSVN.TortoiseSVN",
     "VideoLAN.VLC",
     "VMware.WorkstationPro",
