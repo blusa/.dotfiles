@@ -1,0 +1,216 @@
+; HPLJ1020.INF
+; HP LaserJet 1020 series drivers
+;
+; Copyright(C) 2010 Marvell International Ltd.
+;
+; All rights reserved.
+
+
+[Version]
+Signature		= "$Windows NT$"
+ClassGUID	={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class		=Printer
+Provider		="Hewlett-Packard"
+DriverVer=09/18/2012,2012.918.1.57980
+catalogfile.NTx86 	= HP102032.CAT
+catalogfile.NTamd64 = HP102064.CAT
+
+[Manufacturer]
+%MFG%=HP,NTx86,NTamd64
+
+[HP]
+"HP LaserJet 1020" = LJ1020,USBPRINT\Hewlett-Packardhp_La26DD, Hewlett-Packardhp_La26DD
+"HP LaserJet 1022" = LJ1020,USBPRINT\Hewlett-Packardhp_LaE75C, Hewlett-Packardhp_LaE75C
+"HP LaserJet 1022n" = LJ1020,USBPRINT\Hewlett-Packardhp_LaD566, Hewlett-Packardhp_LaD566
+"HP LaserJet 1022nw" = LJ1020,USBPRINT\Hewlett-Packardhp_La0C15, Hewlett-Packardhp_La0C15
+"HP LaserJet 1018" = LJ1018,USBPRINT\Hewlett-Packardhp_La10DC, Hewlett-Packardhp_La10DC
+
+[HP.NTx86]
+"HP LaserJet 1020" = LJ1020,USBPRINT\Hewlett-Packardhp_La26DD, Hewlett-Packardhp_La26DD
+"HP LaserJet 1022" = LJ1020,USBPRINT\Hewlett-Packardhp_LaE75C, Hewlett-Packardhp_LaE75C
+"HP LaserJet 1022n" = LJ1020,USBPRINT\Hewlett-Packardhp_LaD566, Hewlett-Packardhp_LaD566
+"HP LaserJet 1022nw" = LJ1020,USBPRINT\Hewlett-Packardhp_La0C15, Hewlett-Packardhp_La0C15
+"HP LaserJet 1018" = LJ1018,USBPRINT\Hewlett-Packardhp_La10DC, Hewlett-Packardhp_La10DC
+
+[HP.NTamd64]
+"HP LaserJet 1020" = LJ1020,USBPRINT\Hewlett-Packardhp_La26DD, Hewlett-Packardhp_La26DD
+"HP LaserJet 1022" = LJ1020,USBPRINT\Hewlett-Packardhp_LaE75C, Hewlett-Packardhp_LaE75C
+"HP LaserJet 1022n" = LJ1020,USBPRINT\Hewlett-Packardhp_LaD566, Hewlett-Packardhp_LaD566
+"HP LaserJet 1022nw" = LJ1020,USBPRINT\Hewlett-Packardhp_La0C15, Hewlett-Packardhp_La0C15
+"HP LaserJet 1018" = LJ1018,USBPRINT\Hewlett-Packardhp_La10DC, Hewlett-Packardhp_La10DC
+
+[LJ1020.NTx86]
+DriverVer=09/18/2012,2012.918.1.57980
+CopyFiles	= DRV,SYSFILES,PRTPROCS,DRV1020,SYS1020
+DataSection	= LJ1020_DATA_NT
+
+[LJ1020.NTamd64]
+DriverVer=09/18/2012,2012.918.1.57980
+CopyFiles	= DRV,SYSFILES,PRTPROCS,DRV1020,SYS1020
+DataSection	= LJ1020_DATA_NT
+
+[LJ1018.NTx86]
+DriverVer=09/18/2012,2012.918.1.57980
+CopyFiles	= DRV,SYSFILES,PRTPROCS,DRV1018,SYS1018
+DataSection	= LJ1018_DATA_NT
+
+[LJ1018.NTamd64]
+DriverVer=09/18/2012,2012.918.1.57980
+CopyFiles	= DRV,SYSFILES,PRTPROCS,DRV1018,SYS1018
+DataSection	= LJ1018_DATA_NT
+
+[LJ1020_DATA_NT]
+DriverFile		= sdhp1020.dll
+DataFile		= SDhp1020.SDD
+ConfigFile	= suhp1020.dll
+HelpFile		= SDhp1020.CHM
+DefaultDataType	= RAW
+PrintProcessor	= HP1020PrintProc,pphp1020.dll
+LanguageMonitor	= HPLJ1020LM,zlhp1020.dll
+
+[LJ1018_DATA_NT]
+DriverFile		= sdhp1020.dll
+DataFile		= SDhp1020.SDD
+ConfigFile	= suhp1020.dll
+HelpFile		= SDhp1018.CHM
+DefaultDataType	= RAW
+PrintProcessor	= HP1020PrintProc,pphp1020.dll
+LanguageMonitor	= HPLJ1020LM,zlhp1020.dll
+
+
+[DRV]
+GChp1020.dll
+SDhp1020.DLL
+SDhp1020.SDD
+SUhp1020.DLL
+SUhp1020.ENT
+SUhp1020.VER
+
+[DRV1020]
+SDhp1020.CHM
+
+[DRV1018]
+SDhp1018.CHM
+
+[SYSFILES]
+ZLhp1020.DLL
+ZSHP1020.EXE
+zshp1020s.dll
+
+[PRTPROCS]
+PPhp1020.DLL
+
+[SYS1020]
+hp1020.img
+hp1022.img
+hp1022n.img
+ZSHP1020.CHM
+
+[SYS1018]
+hp1018.img
+ZSHP1018.CHM
+
+[SourceDisksNames.x86]
+1 = %Location%,,,%LANGDIR%
+2 = %Location%,drv32.cab,,
+3 = %Location%,,,
+
+[SourceDisksNames.amd64]
+1 = %Location%,,,%LANGDIR%
+2 = %Location%,drv64.cab,,
+3 = %Location%,,,
+
+[SourceDisksFiles]
+SDhp1020.DLL	= 2
+SUhp1020.DLL	= 2
+ZLhp1020.DLL	= 2
+GChp1020.dll 	= 2
+PPhp1020.DLL	= 2
+ZSHP1020.EXE	= 2
+SUhp1020.ENT	= 1
+SDhp1020.SDD	= 1
+SDhp1020.CHM	= 1
+ZSHP1020.CHM	= 1
+zshp1020s.dll	= 1
+SUhp1020.VER	= 3
+hp1020.img	= 3
+hp1022.img	= 3
+hp1022n.img	= 3
+SDhp1018.CHM	= 1
+ZSHP1018.CHM	= 1
+hp1018.img	= 3
+
+[DestinationDirs]
+DefaultDestDir 	= 66000
+DRV		= 66000
+SYSFILES	= 66002
+PRTPROCS	= 66001
+DRV1020		= 66000
+DRV1018		= 66000
+SYS1020	= 66002
+SYS1018	= 66002
+
+[Strings]
+Location		= "HP LaserJet 1020 series Install Disk 1"
+MFG		= "HP"
+LANGDIR  	= "ENGLISH"
+
+; Arabic
+[Strings.0001]
+Location		= "HP LaserJet 1020 series Install Disk 1"
+MFG		= "HP"
+LANGDIR     	= "Arabic"
+
+; Chinese-Simplified
+[Strings.0804]
+LANGDIR     	= "SChinese"
+Location		= "HP LaserJet 1020 series Install Disk 1"
+MFG		= "HP"
+
+; Traditional-Chinese
+[Strings.0004]
+LANGDIR     	= "TChinese"
+Location		= "HP LaserJet 1020 series Install Disk 1"
+MFG		= "HP"
+
+; German
+[Strings.0007]
+LANGDIR     	= "Deutsch"
+Location		= "HP LaserJet 1020 series Install Disk 1"
+MFG		= "HP"
+
+; English
+[Strings.0009]
+LANGDIR     	= "English"
+Location		= "HP LaserJet 1020 series Install Disk 1"
+MFG		= "HP"
+
+; Spanish
+[Strings.000a]
+LANGDIR     	= "Espanol"
+Location		= "HP LaserJet 1020 series Install Disk 1"
+MFG		= "HP"
+
+; French
+[Strings.000c]
+LANGDIR     	= "Francais"
+Location		= "HP LaserJet 1020 series Install Disk 1"
+MFG		= "HP"
+
+; Italian
+[Strings.0010]
+LANGDIR     	= "Italiano"
+Location		= "HP LaserJet 1020 series Install Disk 1"
+MFG		= "HP"
+
+; Korean
+[Strings.0012]
+LANGDIR     	= "Korean"
+Location		= "HP LaserJet 1020 series Install Disk 1"
+MFG		= "HP"
+
+; Russian
+[Strings.0019]
+LANGDIR     	= "Russian"
+Location		= "HP LaserJet 1020 series Install Disk 1"
+MFG		= "HP"

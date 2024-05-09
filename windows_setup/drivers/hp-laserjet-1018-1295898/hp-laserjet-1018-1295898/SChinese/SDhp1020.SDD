@@ -1,0 +1,190 @@
+[Installation]
+Product=685
+Configuration=SUhp1020.DLL
+UI=SUhp1020.DLL
+Driver=SDhp1020.DLL
+
+[Units]
+MarginPerInch=300
+MarginPerCM=118     ; 300/2.54
+ExtentPerInch=100
+
+[PrinterName]
+0=HP LaserJet 1020
+1=HP LaserJet 1022
+2=HP LaserJet 1022n
+3=HP LaserJet 1022nw
+4=HP LaserJet 1018
+
+[DefaultPrinter]
+DefaultFeed=1
+PrintQuality=600
+YResolution=600
+MarginEnglish=47,47,47,47
+MarginMetric=47,47,47,47
+Resolution=600
+Formats=0,1,2,3,4,5,6
+PrintProcessor=HP1020PrintProc
+DataType=IMF
+MediaType=1
+Papers=1,5,7,9,11,20,27,28,34,37,13,259,262,261,260,258,257,256
+Media=260,261,512,267,262,265,513,258,1,514,515,516,263,2,273
+Capabilities=1,2,3,4,7,9,10,11,12,13,14,16
+;Removed 3,4, from following line to fix A4 problem
+Fields=1,2,9,10,11,12,13,16
+Bins=7,4
+Source=7
+BinName=BinNameCassette
+NUps=0,2,4,6,9,16
+MinExtent=300,500
+MaxExtent=850,1400
+Aspect1=1
+GCR=40
+Data1=0
+Dither=0
+PlaneMode=5
+EEDumpLine=0
+PlaneBuffer=1
+Data2=2
+Color=1
+;SetupDLL=vshp1020,Setup
+HalftoneKeys=1,12
+SpatialReductionMethod=0
+DepthReductionMethod=0
+MaxPasses=8
+MaxBytesPerPage=0
+PixAlignY=4
+PixAlignX=128
+
+[HP LaserJet 1020]
+ResolutionXY=600,600
+Data2=1
+
+[HP LaserJet 1022]
+ResolutionXY=600,600, 1200,1200
+Data2=1
+
+[HP LaserJet 1022n]
+ResolutionXY=600,600, 1200,1200
+Data2=1
+
+[HP LaserJet 1022nw]
+ResolutionXY=600,600, 1200,1200
+Data2=1
+
+[HP LaserJet 1018]
+ResolutionXY=600,600
+Data2=1
+
+; Instead of Upper Tray, since there's only one cassette
+[BinNameCassette]
+7=自动选择
+4=手动进纸
+
+[ATMOVE]
+HP0=-16,-16,-16,-16
+HP1=-14,-14,-14,-14
+HP2=-12,-12,-12,-12
+
+[PaperName]
+;TRANSLATE THIS SECTION
+1=Letter
+5=Legal
+7=Executive
+9=A4
+11=A5
+13=B5 (JIS)
+20=10 号信封
+27=DL 信封
+28=C5 信封
+34=B5 信封
+37=Monarch 信封
+262=A6
+257=16K
+258=8.5x13
+259=B5 (ISO)
+260=明信片
+261=双面明信片
+
+[MediaName]
+;TRANSLATE THIS SECTION
+:DO NOT RENUMBER THE MEDIA TYPES _ RENUMBERING WILL MESS UP THE UI MESSAGE BOXES!!!
+;The media order is controlled by the Media= key order in the section.
+1=普通纸
+261=卡片纸
+513=信头纸
+2=透明投影胶片
+515=预先打孔纸
+265=标签
+260=证券纸，存档打印
+516=再生纸
+512=彩纸
+514=预先打印纸
+263=粗糙纸
+262=重磅纸 (90 - 105 g/m2)
+267=信封
+258=轻磅纸 < 75 g/m2
+273=硫酸纸
+
+[PaperSize]
+262=1050,1480,2
+257=775,1075,4
+258=850,1300,4
+259=1760,2500,2
+260=1000,1480,2
+261=1480,2000,2
+
+[DefaultPaper]
+2=1	; Canada
+500=1	; Falkland Islands
+501=1	; Belize
+502=1	; Guatemala
+503=1	; El Salvador
+504=1	; Honduras
+505=1	; Nicaragua
+506=1	; Costa Rica
+507=1	; Panama
+51=1	; Peru
+52=1	; Mexico
+54=1	; Argentina
+56=1	; Chile
+57=1	; Colombia
+58=1	; Venezuela
+591=1	; Bolivia
+592=1	; Guyana
+593=1	; Ecuador
+594=1	; French Guiana
+595=1	; Paraguay
+597=1	; Suriname
+598=1	; Uruguay
+
+[Halftone]
+PrintQuality600.Data21=HP0
+PrintQuality600.Data22=HP2
+PrintQuality1200.Data21=HP1
+
+[AdjustGlyph]
+幼圆=6,18
+华文楷体=6,18
+华文宋体=6,18
+华文中宋=6,18
+华文仿宋=6,18
+方正姚体=6,18
+华文彩云=6,18
+华文琥珀 =6,18
+华文隶书 =6,18
+新细明体=6,18
+细明体=6,18
+標楷體=6,18
+宋体=6,18
+新宋体=6,18
+仿宋=6,18
+楷体=6,18
+仿宋_GB2312=6,18
+楷体_GB2312　=6,18
+文鼎PL細上海宋=6,18
+文鼎PL中楷=6,18
+华康标准宋体=6,18
+HKSCS-2001=6,18
+Ming(for ISO10646)ExtB =6,18
+Ming(for ISO10646) =6,18
