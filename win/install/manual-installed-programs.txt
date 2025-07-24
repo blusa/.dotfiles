@@ -1,0 +1,51 @@
+﻿Alacritty | True | True
+CHITUBOX_Basic | True | True
+Creality Print 6.1 | True | True
+Cursor (User) | True | True
+Dolby Vision Provisioning Utility | True | True
+Elgato Camera Hub | True | True
+Git | True | True
+GitHub Desktop | True | True
+Google Chrome | True | True
+Google Drive | True | True
+Insomnia | True | True
+Intel Connectivity Drivers UWD | True | True
+Intel(R) Computing Improvement Program | True | True
+Intel(R) Graphics Software & Drivers | True | True
+Intel(R) Wireless Bluetooth(R) | True | True
+Intel® Driver & Support Assistant | True | True
+Intel® Graphics Software | True | True
+JetBrains ETW Host Service (x64) | True | True
+JetBrains Toolbox | True | True
+Kiro (User) | True | True
+komorebi | True | True
+Lenovo Vantage Service | True | True
+Logi Options+ | True | True
+Logi Plugin Service | True | True
+Logitech G HUB | True | True
+MATLAB Runtime 9.10 | True | True
+Mullvad Browser | True | True
+Notepad++ (64-bit x64) | True | True
+Obsidian | True | True
+oneAPI Level Zero | True | True
+OpenSCAD (remove only) | True | True
+Oracle VirtualBox 7.1.10 | True | True
+PyCharm | True | True
+qBittorrent | True | True
+Razer Chroma | True | True
+Razer Synapse | True | True
+Rider | True | True
+spacedesk Windows DRIVER | True | True
+Spark Desktop 3.23.1 | True | True
+Spotify | True | True
+Steema TeeChart for .NET 2012 | True | True
+STL-Thumb | True | True
+Tabby 1.0.223 | True | True
+Tailscale | True | True
+THX Spatial Audio USB 1532-055E | True | True
+Warp | True | True
+WezTerm version 20240203-110809-5046fc22 | True | True
+whkd | True | True
+XPipe | True | True
+ZeroTier One | True | True
+Zotero | True | True
