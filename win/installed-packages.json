@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2025-07-10T08:44:12.928-00:00",
+	"CreationDate" : "2025-07-24T10:51:49.199-00:00",
 	"Sources" : 
 	[
 		{
@@ -14,6 +14,9 @@
 				},
 				{
 					"PackageIdentifier" : "Notepad++.Notepad++"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.OneDrive"
 				},
 				{
 					"PackageIdentifier" : "OpenSCAD.OpenSCAD"
@@ -44,6 +47,9 @@
 				},
 				{
 					"PackageIdentifier" : "Alacritty.Alacritty"
+				},
+				{
+					"PackageIdentifier" : "xpipe-io.xpipe"
 				},
 				{
 					"PackageIdentifier" : "Tailscale.Tailscale"
@@ -97,10 +103,16 @@
 					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.8"
 				},
 				{
+					"PackageIdentifier" : "Eugeny.Tabby"
+				},
+				{
 					"PackageIdentifier" : "GitHub.GitHubDesktop"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.OneDrive"
+					"PackageIdentifier" : "MullvadVPN.MullvadBrowser"
+				},
+				{
+					"PackageIdentifier" : "Spotify.Spotify"
 				},
 				{
 					"PackageIdentifier" : "JetBrains.Toolbox"
@@ -116,6 +128,12 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.PowerToys"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VisualStudioCode"
+				},
+				{
+					"PackageIdentifier" : "Amazon.Kiro"
 				},
 				{
 					"PackageIdentifier" : "Anysphere.Cursor"
