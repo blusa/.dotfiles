@@ -1,4 +1,19 @@
 # -----------------------------
+# Keybindings
+# -----------------------------
+bindkey -v
+bindkey '^p' history-search-backward
+bindkey '^n' history-search-forward
+bindkey '^[w' kill-region
+
+# Increase nesting limit so Starship + vi-mode can both wrap zle widgets
+typeset -g FUNCNEST=5000
+
+# FZF, zoxide, and Starship inits
+eval "$(fzf --zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+
+# -----------------------------
 # Zinit Setup
 # -----------------------------
 export ZINIT_HOME="${HOME}/.zinit/bin"
@@ -10,13 +25,6 @@ fi
 
 source "${ZINIT_HOME}/zinit.zsh"
 
-# -----------------------------
-# fzf keybindings & zoxide (before plugins)
-# -----------------------------
-eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"
-
-# -----------------------------
 # Path updates
 # -----------------------------
 export PATH="$PATH:/Users/blusa/.lmstudio/bin"
@@ -38,7 +46,6 @@ zinit light jeffreytse/zsh-vi-mode
 # OMZ snippets
 zinit snippet OMZL::git.zsh
 zinit snippet OMZP::git
-zinit snippet OMZP::sudo
 zinit snippet OMZP::command-not-found
 
 # Replay previous working directory
@@ -53,17 +60,7 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
-# -----------------------------
-# Prompt (Starship)
-# -----------------------------
 eval "$(starship init zsh)"
-
-# -----------------------------
-# Keybindings
-# -----------------------------
-bindkey '^p' history-search-backward
-bindkey '^n' history-search-forward
-bindkey '^[w' kill-region
 
 # -----------------------------
 # History Settings
