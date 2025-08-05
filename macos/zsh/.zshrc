@@ -35,6 +35,7 @@ export PATH="$PATH:/Users/blusa/.lmstudio/bin"
 # Load completions first
 autoload -Uz compinit && compinit
 
+
 # Plugin loading
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
